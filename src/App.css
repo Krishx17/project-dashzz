@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #0e0e15;
+  color: #fff;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#content {
+  flex: 1;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content-item {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+  /* transition: background-color 0.3s; Smooth transition for hover effect */
+  transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.03); 
+        background-color: #fff;
+        color: #0e0e15;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.dashboard {
+  width: stretch;
   color: white;
+  padding-left: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.dashboard-background {
+  background-image: url('../images/background.jpg');
+  background-size: cover;  /* Adjust the size property as needed */
+  background-position: center center;  /* Adjust the position property as needed */
+  background-repeat: no-repeat;  /* Adjust the repeat property as needed */
+  height: 100vh;  /* Set the height to your desired value */
+  /* opacity: 50%; */
+  /* Add additional styling as needed */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile{
+  background-color: #0e0e15;
+  color: #fff;
+  width: stretch;
+  padding-left: 3rem;
 }
